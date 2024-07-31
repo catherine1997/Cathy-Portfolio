@@ -90,8 +90,7 @@ body{
   display: flex;
   background-color: #fff;
   justify-content: space-between;
-  /* gap: 200px; */
-  height: 650px;
+  height: 706px;
   margin: 20px;
   padding: 60px;
 
@@ -290,11 +289,7 @@ img{
     display: flex;
     background-color: #fff;
     justify-content: space-between;
-    /* overflow: hidden; */
-    /* width: contain; */
-    /* gap: 200px; */
     height: 650px;
-    /* margin: 80px; */
     padding: 80px;
   
   }
@@ -366,6 +361,13 @@ img{
     .project-items{
      width: 100%;
      font-size: 16px;
+    }
+    .recent-projects{
+        font-size: 32px;
+    }
+
+    .description{
+        font-size: 12px;
     }
  
  }
@@ -442,7 +444,7 @@ img{
         grid-template-columns: 250px;
     }
     .grid-item, .grid-items{
-        /* padding-left: 100px; */
+        /* padding-right: 100px; */
         width: 100%;
     }
  }
