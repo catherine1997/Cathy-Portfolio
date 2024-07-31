@@ -162,8 +162,12 @@ img{
     font-size: 24px;
    }
 
-   .paragraph, .email, .connect{
+   .email, .connect{
     font-size: 10px;
+   }
+
+   .paragraph{
+    font-size: 14px;
    }
 
    .email, .connect{
@@ -224,8 +228,11 @@ img{
 }
 
 @media (max-width: 1080px) {
-    .session, .experience, .download{
+    .experience {
         font-size: 16px;
+    }
+    .session,.download{
+        font-size: 14px;
     }
 
     .heading{
@@ -286,18 +293,33 @@ img{
     /* overflow: hidden; */
     /* width: contain; */
     /* gap: 200px; */
-    height: 706px;
+    height: 650px;
     /* margin: 80px; */
     padding: 80px;
   
+  }
+.about-me{
+    font-size: 24px;
+}
+  .picture{
+    width: 400px;
+    margin-bottom: 80px;
   }
 
   @media (max-width: 1080px) {
     .about{   
         /* flex-direction: column; */
-        height: 1300px ;
+        height: 900px ;
         gap: 80px;
         flex-wrap: wrap;
+    }
+
+    .about-me{
+        font-size: 10px;
+    }
+    .picture{
+        width: 100%;
+        margin-top: -80px;
     }
 
 }
@@ -342,7 +364,6 @@ img{
      flex-wrap: wrap;
     }
     .project-items{
-    
      width: 100%;
      font-size: 16px;
     }
@@ -387,6 +408,9 @@ img{
     .brands{
      flex-wrap: wrap;
     }
+    .clients{
+        text-align: center;
+    }
    
  }
 
@@ -418,7 +442,7 @@ img{
         grid-template-columns: 250px;
     }
     .grid-item, .grid-items{
-        padding-left: 100px;
+        /* padding-left: 100px; */
         width: 100%;
     }
  }
@@ -454,8 +478,12 @@ img{
 
 
  @media (max-width: 1080px) {
-    .parar{
+    .para, .success-stories{
         font-size: 14px;
+    }
+
+    .contact,  .brands-type{
+        font-size: 24px;
     }
     }
    
