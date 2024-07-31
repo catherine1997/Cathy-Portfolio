@@ -38,7 +38,13 @@ body{
 
 .navbar-toggler{
     border: none;
-    font-size: 1.25rem;
+    font-size: 20px;
+}
+
+.navbar-toggler-icon{
+    width: 1rem;
+    height: 1rem;
+   
 }
 .navbar-toggler:focus, .btn-close:focus{
     box-shadow: none;
@@ -85,9 +91,9 @@ body{
   background-color: #fff;
   justify-content: space-between;
   /* gap: 200px; */
-  height: 706px;
-  margin: 80px;
-  padding: 80px;
+  height: 650px;
+  margin: 20px;
+  padding: 60px;
 
 }
  
@@ -104,7 +110,7 @@ body{
 @media (max-width: 1080px) {
     .hero-section{   
         /* flex-direction: column; */
-        height: 1300px ;
+        height: 1000px ;
         gap: 80px;
         flex-wrap: wrap;
     }
@@ -150,17 +156,21 @@ img{
 @media (max-width: 1080px){
     img{
         width: 100%;
+        margin-top: -40px;
     }
    .text{
-    font-size: 30px;
+    font-size: 24px;
    }
 
    .paragraph, .email, .connect{
-    font-size: 16px;
+    font-size: 10px;
    }
 
    .email, .connect{
-    height: 60px;
+    padding-top: 10px;
+    height: 40px;
+    width: 100%;
+
    }
 }
 
@@ -441,3 +451,11 @@ img{
     background-color: #171911;
     margin-bottom: 20px;
  }
+
+
+ @media (max-width: 1080px) {
+    .parar{
+        font-size: 14px;
+    }
+    }
+   
