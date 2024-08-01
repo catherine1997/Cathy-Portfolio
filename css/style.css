@@ -106,10 +106,10 @@ body{
     left: 0;
 } */
 
-@media (max-width: 1080px) {
+@media (max-width: 991px) {
     .hero-section{   
         /* flex-direction: column; */
-        height: 1000px ;
+        height: 1100px ;
         gap: 80px;
         flex-wrap: wrap;
     }
@@ -198,7 +198,7 @@ img{
 }
 
 .span{
-    font-size: 96px;
+    font-size: 70px;
     font-weight: 700;
 }
 
@@ -246,26 +246,37 @@ img{
 
 .flex-container{
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap; /* Allows flex items to wrap to the next line if they exceed the container's width */
+    justify-content: space-around; /* Adjust the alignment as needed */
+    gap: 20px; /* Adds space between flex items */
+    padding: 10px;
+    margin: 0 auto; /* Center the container if needed */
+    max-width: 1200px; 
     margin-top: 40px;
 }
 .flex-items-box{
     padding: 40px 20px;
-    width: 290px;
+    /* width: 290px; */
+    border-radius: 15px;
     height: 286px;
     background-color: #E78A00;
-    color: #FBF8F2;
-    border-radius: 15px;
-    font-size: 24px;
+    padding: 20px;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and base width. Adjust base width as needed */
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light border for visibility */
+    text-align: center;
 }
 .flex-items{
     padding: 40px 20px;
-    width: 290px;
+    /* width: 290px; */
+    border-radius: 15px;
     height: 286px;
     background-color: #fff;
-    font-size: 24px;
-    color: #000;
-    border-radius: 15px;
+    padding: 20px;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and base width. Adjust base width as needed */
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light border for visibility */
+    text-align: center;
 }
 .flex-items:hover{
     background-color: #E78A00; ;
@@ -273,15 +284,14 @@ img{
 }
 
 
-@media (max-width: 1080px) {
-   .flex-container{
+@media (max-width: 768px) {
+   /* .flex-container{
     flex-wrap: wrap;
-   }
+   } */
 
-   .flex-items, .flex-items-box{
-    width: 100%;
-    font-size: 16px;
-   }
+   .flex-items-box, .flex-items {
+    flex: 1 1 100%; /* Full width on small screens */
+}
 
 }
 
@@ -301,7 +311,7 @@ img{
     margin-bottom: 80px;
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 991px) {
     .about{   
         /* flex-direction: column; */
         height: 900px ;
@@ -310,7 +320,7 @@ img{
     }
 
     .about-me{
-        font-size: 10px;
+        font-size: 14px;
     }
     .picture{
         width: 100%;
@@ -336,17 +346,19 @@ img{
 }
 .project-container{
     padding: 60px; 
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    padding: 20px;
 
 }
 
 .project-items{
-    margin-top: 40px;
-    padding: 40px 20px;
-    width: 400px;
     height: 477px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
     background-color: #E78A00;
     color: #FBF8F2;
     border-radius: 15px;
@@ -355,13 +367,13 @@ img{
 
 
 @media (max-width: 1080px) {
-    .project-container{
+    /* .project-container{
      flex-wrap: wrap;
     }
     .project-items{
      width: 100%;
      font-size: 16px;
-    }
+    } */
     .recent-projects{
         font-size: 32px;
     }
@@ -371,6 +383,18 @@ img{
     }
  
  }
+
+ @media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .project-container {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
 
  .brands{
     /* margin: 20px 60px; */
